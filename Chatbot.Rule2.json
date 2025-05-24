@@ -1,0 +1,188 @@
+[{
+  "_id": {
+    "$oid": "6805e3c23a3871002e087b31"
+  },
+  "intent": "biaya",
+  "patterns": [
+    "biaya",
+    "spp",
+    "ukt",
+    "tarif",
+    "harga",
+    "uang"
+  ],
+  "response": "Biaya kuliah S2 Kecerdasan Buatan (AI) UGM sebesar RP12.000.000. Info lengkap ada di: https://dcse.fmipa.ugm.ac.id/?page_id=10698&lang=id"
+},
+{
+  "_id": {
+    "$oid": "6805e6cd3a3871002e087b33"
+  },
+  "intent": "prosedur",
+  "patterns": [
+    "prosedur",
+    "pendaftaran",
+    "daftar",
+    "langkah-langkah",
+    "Daftar"
+  ],
+  "response": "1. Menghubungi bagian admisi/sekretariat Magister Kecerdasan Artifisial (MKA)\n2. Membuat akun pendaftaran secara online di laman um.ugm.ac.id.(https://um.ugm.ac.id/pendaftaran/public/index.php)\n\ta. Siapkan semua dokumen yang dipersyaratkan. Panitia hanya memproses dokumen yang sesuai dengan ketentuan.\n\tb. Siapkan data nomor pendaftaran/peserta tes potensi akademik dan tes kemampuan Bahasa Inggris.\n\tc. Siapkan hasil pemindaian (scan) dokumen asli di bawah ini (ukuran minimal 150KB dan maksimal 800KB untuk masing-masing file; hasil pemindaian dokumen harus dapat dibaca dengan jelas untuk keperluan verifikasi),kemudian diunggah pada saat mendaftar online.\n3. Lolos ujian tertulis yang diselenggarakan oleh Progran Studi MKA Pada tanggal TBA.\nDetailnya bisa dilihat pada link : https://dcse.fmipa.ugm.ac.id/?page_id=10698&lang=id"
+},
+{
+  "_id": {
+    "$oid": "6805ee583a3871002e087b36"
+  },
+  "intent": "syarat dan dokumen",
+  "patterns": [
+    "syarat",
+    "persyaratan",
+    "dokumen",
+    "butuh ijazah apa saja",
+    "Berkas"
+  ],
+  "response": "Syarat pendaftaran meliputi ijazah dan transkrip nilai S1 atau setara, sertifikat akreditasi program studi, sertifikat hasil potensi akademik, sertifikat bahasa inggris, rekomendasi dari dua dosen, surat pernyataan keaslian dokumen, dan bukti pembayaran pendaftaran. Informasi lengkapnya ada di https://dcse.fmipa.ugm.ac.id/?page_id=10698&lang=id"
+},
+{
+  "_id": {
+    "$oid": "680ca47bf9e365cbde9e5ca2"
+  },
+  "intent": "halo",
+  "patterns": [
+    "halo",
+    "hi",
+    "hola",
+    "memastikan",
+    "bantuan",
+    "tanya"
+  ],
+  "response": "hi, ada yang bisa saya bantu? silakan ajukan pertanyaan anda"
+},
+{
+  "_id": {
+    "$oid": "681f4af896c60a7fb4c597b9"
+  },
+  "intent": "lokasi",
+  "patterns": [
+    "lokasi",
+    "gedung perkuliahan"
+  ],
+  "response": "Lokasi Pembelajaran Magister Kecerdasan Artifisial UGM di Gedung S2/S3, Lantai 4, Fakultas MIPA, Universitas Gadjah Mada"
+},
+{
+  "_id": {
+    "$oid": "681f4cd296c60a7fb4c597bb"
+  },
+  "intent": "jurusan yang bisa mendaftar",
+  "patterns": [
+    "bidang lain",
+    "bukan dari jurusan IT",
+    "Jurusan selain it",
+    "bukan dari rumpun ilmu komputer\"\"",
+    "non-it",
+    "Jurusan apa yang bisa mendaftar",
+    "non komputer\"",
+    "bukan dari rumpun IT atau Ilmu komputer"
+  ],
+  "response": "Jika anda bukan berasal dari rumpun ilmu komputer atau matematika, anda diharuskan mengambil program pra S2 AI UGM. Bisa dilihat pada link berikut: https://dcse.sheen.id/id/mka/mka-pra/"
+},
+{
+  "_id": {
+    "$oid": "681f4d2396c60a7fb4c597bd"
+  },
+  "intent": "kurikulum",
+  "patterns": [
+    "kurikulum",
+    "struktur perkuliahan",
+    "info kurikulum"
+  ],
+  "response": "Kurikulum program reguler Program Studi Magister Kecerdasan Artifisial terdiri dari 42 SKS yang memuat 18 SKS mata kuliah wajib, termasuk 2 SKS Proposal Tesis, 1 SKS Seminar Tesis, dan 6 SKS Tesis. Program Studi Magister Kecerdasan Artifisial dapat diselesaikan dalam 3 hingga 4 semester. Lulusan akan mendapatkan gelar M.CS(AI), Master of Computer Science in Artificial Intelligence."
+},
+{
+  "_id": {
+    "$oid": "681f4db996c60a7fb4c597bf"
+  },
+  "intent": "mata kuliah",
+  "patterns": [
+    "mata kuliah",
+    "matkul"
+  ],
+  "response": "Ada banyak sekali mata kuliah yang ditawarkan salah satunya, pattern recognition, machine learning, AI in Business dan masih banyak lagi. Silakan kunjungi laman resmi MKA UGM di https://dcse.sheen.id/id/mka/mka-kurikulum/ untuk informasi lengkap."
+},
+{
+  "_id": {
+    "$oid": "681f4f0896c60a7fb4c597c1"
+  },
+  "intent": "program yang ditawarkan mka",
+  "patterns": [
+    "program yang ditawarkan",
+    "program yang ada di mka",
+    "program reguler",
+    "program research"
+  ],
+  "response": "Magister Kecerdasan Artifisial memiliki program reguler dan program by research. Program regular dan program by research memiliki kurikulum dan mata kuliah yang berbeda. Silakan kunjungi laman resmi MKA UGM di https://dcse.sheen.id/id/mka/mka-kurikulum/ untuk informasi lengkap."
+},
+{
+  "_id": {
+    "$oid": "681f4ff196c60a7fb4c597c3"
+  },
+  "intent": "apa itu mka",
+  "patterns": [
+    "apa yang dituju pada program mka",
+    "apa itu mka",
+    "apa fokus utama mka"
+  ],
+  "response": "Program Studi Magister Kecerdasan Artifisial merupakan salah satu Program Magister, yang berada di Departemen IKE, Fakultas MIPA, UGM yang didirikan pada tahun 2022 melalui Keputusan Rektor Universitas Gadjah Mada Nomor 388/UN1.P/KPT/HUKOR/2022 untuk memenuhi kebutuhan profesional dalam bidang Kecerdasan Artifisial yang meningkat signifikan seiring dengan era industri 4.0, masyarakat 5.0 dan perkembangan teknologi masa depan.Keunggulan Program Studi Magister Kecerdasan Artifisial di Universitas Gadjah Mada (UGM) terletak pada penguatan konsep teoritis di bidang Kecerdasan Artifisial yang diterapkan dalam menyelesaikan masalah dalam berbagai bidang. Program Studi Magister Kecerdasan Artifisial di UGM membangun fondasi yang kuat yaitu prinsip-prinsip matematika, komputer dan kecerdasan komputasional dalam memahami teori Kecerdasan Artifisial, algoritma Kecerdasan Artifisial, Pembelajaran Mesin, dan Logika Fuzzy, serta dalam memahami aplikasi Pemrosesan Bahasa Alami (Natural Language Processing), Sistem Berbasis Pengetahuan (Knowledge Based Systems), Penalaran Komputer (Computer Reasoning), Penglihat Komputer (Computer Vision), Pengenalan Pola (Pattern Recognition), Perencanaan (Planning), Agen Cerdas (Intelligent Agent) dan Bioinformatika."
+},
+{
+  "_id": {
+    "$oid": "681f51be96c60a7fb4c597c5"
+  },
+  "intent": "Profesi dan Profil Lulusan Magister Kecerdasan Artifisial",
+  "patterns": [
+    "Profil capaian lulusan mka",
+    "Profesi lulusan mka"
+  ],
+  "response": "Profesi Lulusan: Lulusan Program Studi Magister Kecerdasan Artifisial mampu mengisi berbagai okupasi bidang kecerdasan artifisial, yang tidak terbatas pada peneliti, dosen, guru, data scientist dan data analyst, AI specialist, AI engineer, AI scientist, machine learning engineer, business intelligence developer, AI entrepreneur, Chief AI scientist start-up. Profil Lulusan Lulusan Program Studi Magister Ilmu Komputer memiliki empat profil utama: (1) Peneliti, (2) Analis dan Desainer kecerdasan artifisial, (3) Akademisi, dan (4) Enterpreneur bidang kecerdasan artifisial. Silakan kunjungi laman resmi MKA UGM di https://dcse.sheen.id/id/mka/mka-profil-lulusan/ untuk informasi lengkap."
+},
+{
+  "_id": {
+    "$oid": "681f534996c60a7fb4c597c7"
+  },
+  "intent": "Dosen atau Staff Pengajar Magister Kcerdasan Artifisial",
+  "patterns": [
+    "dosen mka?",
+    "staff pengajar mka",
+    "ada berapa dosen mka",
+    "dosen magister kecerdasan artifisial ugm",
+    "staff pengajar magister kecerdasan artifisial ugm"
+  ],
+  "response": [
+    "Saat ini, MKA didukung oleh dosen dengan kualifikasi guru besar dan doktor yang memiliki kompetensi bidang Kecerdasan Artifisial.",
+    "Afiahayati, S.Kom., M.Cs, Ph.D (Penanggung Jawab Program Studi MKA)",
+    "Prof. Dra. Sri Hartati, M.Sc., Ph.D",
+    "Aina Musdholifah, S.Kom., M.Kom., Ph.D",
+    "Prof. Drs. Agus Harjoko, M.Sc., Ph.D",
+    "Dr. Sri Mulyana, M.Kom",
+    "Prof. Dr. Azhari SN, MT",
+    "Wahyono, Ph.D",
+    "Edi Winarko, M. Sc., Ph. D",
+    "Dr. Dyah Aruming Tyas, S.Si",
+    "Yunita Sari, S.Kom., M.Sc., Ph.D",
+    "Moh Edi Wibowo, S.Kom., M.Kom., Ph.D",
+    "Dr. Nur Rokhman, S.Si., M.Kom"
+  ]
+},
+{
+  "_id": {
+    "$oid": "681f547a96c60a7fb4c597c9"
+  },
+  "intent": "Visi Misi Magister Kecerdasan Artifisial",
+  "patterns": [
+    "apa visi misi mka ugm",
+    "apa visi magister kecerdasan artifisial ugm",
+    "apa misi magister kecerdasan artifisial ugm"
+  ],
+  "response": [
+    "Visi Pada tahun 2037, Program Studi Magister Kecerdasan Artifisial menjadi prodi unggulan tingkat nasional dan kompetitif secara internasional yang berfokus pada sistem cerdas, penglihatan komputer, dan pemrosesan bahasa alami dengan karya-karya inovatif untuk kepentingan bangsa dan kemanusiaan.",
+    "Misi Program Studi Magister Ilmu Komputer adalah Menyelenggarakan pendidikan Program Studi Magister Kecerdasan Artifisial bagi warga masyarakat Indonesia dari semua lapisan dan pelosok tanah air yang berpotensi maju untuk memenuhi kebutuhan teknologi berbasis Kecerdasan Artifisial di garis depan dengan lulusan bertaraf internasional; Menumbuhkembangkan mahasiswa serta lulusan Program Studi Magister Kecerdasan Artifisial, Fakultas MIPA, UGM agar mampu melaksanakan penelitian dasar maupun terapan dalam bidang Kecerdasan Artifisial yang menunjang pengembangan IPTEK dan industri untuk kesejahteraan bangsa dan umat manusia secara terpadu dan bertaraf internasional; Melakukan riset dalam bidang Kecerdasan Artifisial, khususnya sistem cerdas (intelligent system), penglihatan komputer (computer vision), dan pengolahan bahasa alami (natural language processing) untuk menghasilkan karya inovatif dan teruji dalam menunjang pemecahan masalah bangsa dan kemanusiaan; Menghasilkan lulusan yang kompeten dan profesional di bidang Kecerdasan Artifisial."
+  ]
+}]
