@@ -1,40 +1,40 @@
 from flask import Flask, request
 from pymongo import MongoClient
+from twilio.twiml.messaging_response import MessagingResponse
 import re
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 client = MongoClient("mongodb://localhost:27017")
 db = client["Chatbot"]
 collection = db["Rule"]
 
-def pattern_to_regex(pattern):
-    # Ubah pattern menjadi regex fleksibel
-    words = pattern.lower().split()
-    return ".*" + ".*".join(words) + ".*"
-
 def get_response(user_input):
-    user_input = user_input.lower()
     for rule in collection.find():
         for pattern in rule['patterns']:
-            try:
-                regex_pattern = pattern_to_regex(pattern)
-                if re.search(regex_pattern, user_input):
-                    return rule['response']
-            except re.error:
-                if pattern.lower() in user_input:
-                    return rule['response']
+            # Use regex with word boundaries and case-insensitive matching
+            if re.search(r'\b' + re.escape(pattern) + r'\b', user_input, re.IGNORECASE):
+                # Handle both string and list responses
+                response = rule['response']
+                if isinstance(response, list):
+                    return "\n".join(response)  # Join list elements with newlines
+                return response
     return "Maaf, saya belum mengerti pertanyaan Anda."
 
-@app.route("/chatbot", methods=["POST"])
+@app.route("/chatbotmka", methods=["POST"])
 def chatbot():
-    data = request.json
-    print("Data diterima:", data)
-    user_input = data.get("message", "")
-    response = get_response(user_input)  # Panggil fungsi pencocokan
-    return {"response": response}
+    # Parse Twilio's form data
+    data = request.form
+    print("Data diterima:", dict(data))  # Debugging: print the incoming form data
+    user_input = data.get("Body", "").strip()  # Get the message text from Twilio's 'Body' field
+    response_text = get_response(user_input)
+    
+    # Create a TwiML response for Twilio
+    twiml_response = MessagingResponse()
+    twiml_response.message(response_text)
+    
+    return str(twiml_response)
 
-
-if __name__ == "__main__":
+if _name_ == "_main_":
     print("Chatbot Flask server is running on http://localhost:5000")
     app.run(port=5000, debug=True)
